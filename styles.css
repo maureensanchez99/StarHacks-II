@@ -1,7 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto&display=swap');
+
+/* font families
+    font-family: 'Major Mono Display', monospace;
+    font-family: 'Roboto', sans-serif;
+*/
 
 body {
+    font-family: 'Roboto', sans-serif;    
+
     background-image: url('/images/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+header{
+    background-color: white;
+}
+
+.banner {
+    font-family: 'Major Mono Display', monospace;
+    color: rgba(20, 19, 94, 1);
+}
+
+img {
+    object-fit: contain;
 }
