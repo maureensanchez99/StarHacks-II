@@ -16,7 +16,7 @@ body {
 
 /* Navagation bar */
 .nav-container{
-    background: white;
+    background: #FFFFFF;
     height: 125x;
     width: auto;
     margin: 0 auto;
@@ -45,12 +45,18 @@ nav ul{
 .nav-items li{
     list-style: none;
     margin-right: 30px;
+    font-size: 20px;
 }
 
 a {
     text-decoration: none;
 }
 
+.button {
+    background-color: #AE69F2;
+    border-radius: 5px;
+    padding: 10px;
+}
 
 /* Main section */
 main {
@@ -59,12 +65,13 @@ main {
 }
 
 .text-container {
-    color: white;
+    color: #FFFFFF;
     padding: 100x;
 }
 
 h1 {
     font-size: 50px;
+    color: #FFFFFF;
 }
 
 h2 {
@@ -74,4 +81,12 @@ h2 {
 
 img {
     object-fit: contain;
+}
+
+/* Background */
+.astronaut {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
 }

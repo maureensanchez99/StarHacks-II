@@ -7,21 +7,29 @@
 	<meta name="google-signin-scope" content="profile email">
     <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
 	<title> Stars Network </title>
-	<link href="styles.css" rel="stylesheet" type="text/css" />
-	<script src="script.js" async defer></script>
+	<link href="styles.css" rel="stylesheet"/>
+	<!--<script src="script.js" async defer></script>-->
     <script src="https://apis.google.com/js/platform.js" async defer></script>	
 </head>
 
 <body>
-	<header>
-		<div class="banner"> Stars Network </div>
+	<div class="nav-container">
 		<nav>
-				<a href='log in.html'>Login</a>
-				<a href='signup'>Signup</a>
+			<div class="banner"> Stars Network </div>
+			<ul class="nav-items">
+				<li>
+					<a href="/pages/findmentor.html">Find a mentor </a>
+				</li>
+				<li>
+					<a href="/pages/becomeamentor.html"> Become a mentor </a>
+				</li>	
+				<li>
+					<div class="login-btn">
+						<a href="/pages/log in.html">Login</a>
+					</div>
+				</li>
+			</ul>
 		</nav>
-
-		<a href="#" onclick="signOut();">Sign out</a>
-	</header>
 
 	<main>
 
