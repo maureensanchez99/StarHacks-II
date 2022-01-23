@@ -1,26 +1,14 @@
-import { initializeApp } from 'firebase/app';
+function onSignIn(googleUser) {
+  // Useful data for your client-side scripts:
+  var profile = googleUser.getBasicProfile();
+  console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+  console.log('Full Name: ' + profile.getName());
+  console.log('Given Name: ' + profile.getGivenName());
+  console.log('Family Name: ' + profile.getFamilyName());
+  console.log("Image URL: " + profile.getImageUrl());
+  console.log("Email: " + profile.getEmail());
 
-// TODO: Replace the following with your app's Firebase project configuration
-const firebaseConfig = {
-    apiKey: "AIzaSyCUIzaDMYxC823OA1A247sOUzNlVJ4goLM",
-    authDomain: "starhacks-ii.firebaseapp.com",
-    projectId: "starhacks-ii",
-    storageBucket: "starhacks-ii.appspot.com",
-    messagingSenderId: "343896327372",
-    appId: "1:343896327372:web:3570df5c6c034f442d6e69",
-    measurementId: "G-Y6PHDH220F"
-};
-
-const app = initializeApp(firebaseConfig); 
- 
- // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.4/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.4/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-
+  // The ID token you need to pass to your backend:
+  var id_token = googleUser.getAuthResponse().id_token;
+  console.log("ID Token: " + id_token);
+}
