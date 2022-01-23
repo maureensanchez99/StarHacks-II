@@ -25,6 +25,10 @@ header{
     font-size: 60px;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /* Main section */
 main {
