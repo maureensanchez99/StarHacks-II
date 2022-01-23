@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto:wght@300;400&display=swap');
 
 /* font families
     font-family: 'Major Mono Display', monospace;
@@ -14,15 +14,37 @@ body {
     background-size: cover;
 }
 
-header{
-    background-color: white;
+/* Navagation bar */
+.nav-container{
+    background: white;
+    height: 125x;
+    width: auto;
+    margin: 0 auto;
+    padding-top: 25px;
+    z-index: 1;
+    position: relative;
 }
 
-/* Navagation bar */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+nav ul{
+    display: flex;
+}
+
 .banner {
     font-family: 'Major Mono Display', monospace;
     color: rgba(20, 19, 94, 1);
-    font-size: 60px;
+    font-size: 50px;
+}
+
+.nav-items li{
+    list-style: none;
+    margin-right: 30px;
 }
 
 a {
@@ -32,7 +54,22 @@ a {
 
 /* Main section */
 main {
+   text-align: center;
+    align-content: center;
+}
+
+.text-container {
     color: white;
+    padding: 100x;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 300;
 }
 
 img {
