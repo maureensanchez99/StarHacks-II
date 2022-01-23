@@ -18,9 +18,17 @@ header{
     background-color: white;
 }
 
+/* Navagation bar */
 .banner {
     font-family: 'Major Mono Display', monospace;
     color: rgba(20, 19, 94, 1);
+    font-size: 60px;
+}
+
+
+/* Main section */
+main {
+    color: white;
 }
 
 img {
