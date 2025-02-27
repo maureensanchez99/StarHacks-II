@@ -39,7 +39,9 @@ nav ul{
 .banner {
     font-family: 'Major Mono Display', monospace;
     color: rgba(20, 19, 94, 1);
-    font-size: 50px;
+    font-size: 3vw;   
+    text-align: center;
+    flex: 1;   
 }
 
 .nav-items li{
@@ -89,4 +91,36 @@ img {
     height: 300px;
     object-fit: cover;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        font-size: 6vw;  /* Increases text size on tablets */
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-items li {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner {
+        font-size: 8vw;  /* Further increase for mobile screens */
+    }
+
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
 }
